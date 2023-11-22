@@ -499,4 +499,56 @@ One of the most important abstractions of all time.
 
 \subsection*{Concurrency}
 
+\section*{Operating Systems}
+
+\subsection*{About this class}
+CS310 is an old class, and it used to be required for the CS degree until Fall
+2019, when the Duke CS department decided to loosen the restrictions for the
+systems course requirement, thereby letting CS students take their pick among
+the systems courses offered in lieu of 310. It was mainly headed by Professor
+Jeff Chase (who at the time of writing this, is on sabbatical) and Professor
+Bruce Maggs also taught it at some point. 310 underwent a \textbf{major} revamp
+when Professor Danyang Zhuo was hired. He took inspiration from courses at the
+University of Washington and MIT, which use a toy UNIX OS called \textbf{xv6}
+in order to teach OS concepts. Now most of the labs are done in kernel space, a
+big switch-up from the 310 of yore.
+
+A notable change from the pre-Professor-Danyang to the post-Professor-Danyang
+era, aside from the xv6 stuff, is that servers, security, and networking is
+covered to a lesser extent. This does make sense, though, as Duke offers
+separate specialized courses for each of those topics: Intro to Computer
+Network Architecture (CS356), Intro to Computer Security (CS351), and
+Distributed Systems (CS512).
+
+310 is tough but fulfilling and opens your eyes to the sheer amount of
+ingenuity that basically holds up the sky for your computer. Despite the
+requirement for 310 being dropped, I highly recommend taking 310 as an elective
+at some point in your CS degree. Also, it is a prerequisite to CS585 (Secure
+Software Systems, taught by Professor Matthew Lentz) and CS512.
+
+\subsection*{What \emph{is} an OS?}
+What is the role of an OS?\ I heard an analogy once that really stuck with me:
+
+\begin{quote}
+An operating system is like the nervous system. You don’t consciously force
+yourself to shiver when it’s cold— on a deeper biological level, your body is
+“programmed” to maintain homeostasis. Similarly, on a computer, a process
+doesn’t consciously decide to yield the CPU to make way for another, more
+urgent job. The OS does this for you.
+\end{quote}
+
+At the macro level, the OS’s job is to divvy up the resources on a computer so
+that all programs can live in safety and harmony, just like your nervous system
+is constantly trying to keep you healthy and alive… and the OS does all this
+without the userland programs even knowing about much of what’s going on behind
+the scenes. Of course, this is easier said than done. Countless policies and
+complex subsystems go into this management of resources.
+
+Another pithy but useful description of an OS’s job is that it:
+\begin{itemize}
+    \item \textbf{Multiplexes} hardware resources,
+    \item \textbf{Abstracts} the hardware platform, and
+    \item \textbf{Protects} software principals
+\end{itemize}
+
 \end{document}
